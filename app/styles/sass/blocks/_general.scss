@@ -16,6 +16,11 @@ button {
 	background-color: transparent;
 	border: none;
 	padding: 13px 28px 13px 28px;
+	&:active {
+		transition: 0.1s !important;
+		transform: translateY(1px);
+		filter: saturate(150%);
+	}
 }
 
 .btn {
@@ -28,9 +33,9 @@ button {
 		#ebba76 50.9%,
 		#d89e4d 99.65%
 	);
-	transition: 0.2s;
+	transition: 0.3s ease-in-out;
 	&:hover {
-		transition: 0.2s;
+		transition: 0.3s ease-in-out;
 		box-shadow: 0px 0px 20.06px rgba(232, 176, 99, 0.45);
 	}
 }
@@ -40,10 +45,9 @@ button {
 	border-radius: 19px;
 	transition: 0.3s;
 	color: #fff;
-	outline: 1px solid #f9cc8d;
-	outline-offset: -1px;
+	border: 3px solid #f9cc8d;
 	&:hover {
-		outline: none;
+		border: 3px solid #d89e4d;
 		transition: 0.3s;
 		color: #000;
 		background: linear-gradient(

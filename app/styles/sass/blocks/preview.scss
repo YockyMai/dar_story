@@ -1,9 +1,19 @@
 .prewiew-block {
 	height: 650px;
 	width: 100%;
-	background-image: url(../../../images/dist/preview.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
+
+	.filter {
+		position: absolute;
+		top: 0;
+		z-index: -1;
+		background-image: url(../../../images/dist/preview.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		height: 650px;
+		width: 100%;
+		filter: brightness(50%);
+	}
 	header {
 		padding-top: 20px;
 		nav {
@@ -32,6 +42,43 @@
 			display: flex;
 			justify-content: space-between;
 		}
+
+		.dignity {
+			position: relative;
+			width: 30%;
+			div {
+				position: absolute;
+				&:nth-child(1) {
+					right: 45px;
+				}
+				&:nth-child(2) {
+					top: 150px;
+					right: 0;
+				}
+				&:nth-child(3) {
+					bottom: 0;
+					right: 25px;
+				}
+				svg {
+					position: absolute;
+					left: -18px;
+					top: 3px;
+					z-index: 1;
+					cursor: pointer;
+				}
+
+				p {
+					font-weight: 500;
+					background-color: #fff;
+					padding: 3px;
+					font-size: 17px;
+					border-radius: 1em;
+					text-align: center;
+					padding: 3px 13px 3px 13px;
+				}
+			}
+		}
+
 		.preview-info__text {
 			h1 {
 				color: #fff;
@@ -41,6 +88,14 @@
 				margin-bottom: 65px;
 			}
 			h2 {
+				line-height: 55px;
+				span {
+					background-color: #fff;
+					color: #ffb64d;
+					border-radius: 0.2em;
+					padding: 3px;
+					font-weight: 700;
+				}
 				width: 600px;
 				color: #fff;
 				size: 52px;

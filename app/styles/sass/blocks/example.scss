@@ -1,0 +1,27 @@
+.example-block {
+	margin-top: 70px;
+	h1 {
+		font-weight: 400;
+	}
+
+	.example-elements {
+		padding-top: 30px;
+		padding-bottom: 50px;
+		display: flex;
+		margin: 0 auto;
+		justify-content: space-between;
+		div {
+			flex-basis: 25%;
+		}
+		img {
+			display: flex;
+			margin: 0 auto;
+		}
+		p {
+			text-align: center;
+			font-size: 17px;
+			width: 250px;
+			margin: 0 auto;
+		}
+	}
+}
